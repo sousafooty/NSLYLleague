@@ -1,0 +1,412 @@
+/*Estilo propio con tablas*/
+
+/*Estilos de fondo*/
+body {
+    background-color: #4f8d43e6;;
+}
+
+/*Flujo de los elementos de la cabecera*/
+
+header {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* El titulo de la pagina alineada al centro */
+
+header h1 {
+    margin-left: 35%;
+    padding: 0.5%;
+    width: 36%;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 43%;
+    font-weight: bolder;
+}
+
+/* Estilos del segundo titulo de la cabecera */
+
+header h2 {
+    margin-left: 4%;
+    font-size: 173%;
+    color: ghostwhite;
+    font-weight: bold;
+}
+
+/* Estilos de fuentes a todos los titulos de la cabecera */
+
+header * {
+    font-family: Palatino, "URW Palladio L", serif;
+}
+
+/* Flujo de las imagenes */
+
+.images {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+/* Las imagenes solo ocuparan un 33% del contenedor */
+
+.images img {
+    width: 33.3%;
+    height: 33.3%;
+    padding: 1%;    
+    /* Estilos de las imagenes */
+    background-color: gainsboro;
+    border-radius: 0% 2% 2% 2%;
+}
+
+/* La ultima imagen ocupara un 13% de su tamaño */
+
+img:last-child {
+    width: 13%;
+    height: 13%;
+    /* Estilos de las imagenes */
+    border-radius: 90%;
+}
+
+/* Estilos de la barra de navegacion */
+
+nav ul li{
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* Estilos decorativos antes de los elementos de la lista */
+
+nav li::before {
+    content: "»"; /*»*/
+    padding-right: 1%;
+    color: blue;
+}
+
+/* El espacio que ocupara cada elemento de la barra de navegacion */
+
+nav li {
+    width: 8%;
+    margin-left: 7.5%;
+    padding: 0.5% 0% 0.5% 0%;
+    /* Estilos de color */
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+/* Estilos animados de los elementos de la lista */
+
+nav li:hover {
+    transform: scale(1.3);
+    background-color: #d69209;
+    border-radius: 50%;
+}
+
+/* Estilos a los hipervinculos */
+nav a:link, .buttontop a:link {
+    color:#0785b8;
+}
+
+/* Estilo animados de la fuente del anchor */
+
+nav a:hover {
+    color: ghostwhite;
+}
+
+article a:hover {
+    color: rgb(233, 79, 7);
+}
+
+/* Estilos y flujo del cuerpo del articulo */
+
+article {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* Estilo del texto */
+    text-align: center;
+    font-family: "Bradley Hand", cursive;    
+}
+
+/* Estilo del titulo del articulo */
+
+article h2 {    
+    width: 30%;
+    padding: 0.5% 0% 0.5% 0%;
+    margin-left: 35%;
+    margin-right: 20%;
+    border: 10px solid #feae0e;
+    background-color: gainsboro;
+    border-radius: 25%;
+}
+
+/* Estilo de los titulos de cada articulo */
+/* Y estilo del segundo titulo de la pagina */
+
+article h3, header h2, header h1{    
+    font-style: italic;    
+}
+
+/* El tamaño y el estilo de los parrafos */
+
+article p {
+    width: 60%;
+    margin-left: 20%;
+    padding: 0.5%;
+    /* Estilos de color */
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+/* Estilo para los parrafos cortos */
+
+p.petittext {
+    width: 40%;
+    margin-left: 30%;
+    padding: 0.5%;
+}
+
+/* Estilo para los parrafos largos */
+
+.largetext {    
+    /* justificado */
+    text-align: justify;
+    text-justify: inter-word;
+    
+    /* Interlineado un 40% mayor */
+    line-height: 140%;
+}
+
+
+/* Estilos de las tablas y los datos */
+.tablas {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;    
+    /* Estilo de letras */    
+    font-size: 105%;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Estilos de las cabeceras de las tablas y del contenido de las filas */
+
+th, td {
+    padding: 10px 15px;
+}
+
+/* Estilos para el titulo de las tablas */
+
+caption {
+    padding-bottom: 0.5%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+/* Estolos para las cabeceras de las tablas */
+
+thead {
+    background-color: #ffcc99;
+    color: rgb(2, 2, 2);
+}
+
+/* Estilos para el cuerpo de la tabla, para cada fila y los hijos de cada fila (solos los pares)
+tambien es admisible (impares -> odd)*/
+
+tbody tr:nth-child(even) {
+    background-color: #ffcc99;
+    background-color: rgba(255, 204, 153, 0.897);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e9da6ee6;
+}
+
+/* Estilos para cada contenido de las tablas */
+
+td {
+    border-bottom: 1px solid #b2b2b6;
+    border-right: 1px solid #b2b2b6;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Estilos para el primer hijo del contenido de la fila */
+
+td:first-child {
+    border-left: 1px solid #b2b2b6;
+}
+/* Fin de los estilos para las tablas */
+
+/* Estilos para el titulo de las localizacioes */
+.gamelocations h4 {
+    font-size: 122%;
+}
+
+/* Estilos para las localizaciones de los juegos */
+
+.gamelocations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de los parrafos de las localizaciones de los juegos */
+
+.gamelocations p {
+    padding: 0.5%;
+    background-color: gainsboro;
+    border-radius: 25%;
+}
+
+/* Estilos del mapa */
+
+.map {
+    margin-left:36%;
+}
+/* Estilos del iframe de google maps */
+iframe {
+    width:380px;
+    max-width: 380px;
+    max-height: 280px;
+    border:0;
+}
+
+/* Pie de pagina */
+footer{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a:link {
+    color: rgb(200, 255, 0);
+}
+
+
+/* Estilos generales del reglamento */
+
+.laws {
+    width: 65%;
+    margin-left: 17%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* Estilos de colores */
+    background-color:white;
+    border-radius: 1%;
+}
+
+.laws h3 {
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 147%;
+}
+
+.laws h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+}
+
+/* Estilos de colores del reglamento */
+.laws ol, .laws ul {
+    background-color: gainsboro;
+    border-radius: 1%;
+}
+
+/* Estilos de la lista del reglamento */
+
+.letras li{
+    list-style-type: lower-latin;
+}
+
+/* Estilos del boton de la pagina del reglamente */
+
+.buttontop {
+    width: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+}
+
+.buttontop a {
+    margin-left: 48%;
+    padding: 1.5%;
+    background-color: gainsboro;
+    border-radius: 51%;
+}
+
+/* Estilos del formulario */
+
+.formregistration {
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 5%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;    
+    /* Estilo de color */
+    background-color: white;
+    border-radius: 0.5%;
+}
+
+/* Estilos del texto del formulario */
+
+.formregistration article {
+    text-align: justify;
+}
+
+/* Estilos de las cabeceras grandes del formulario */
+
+.formregistration h2 {
+    font-style: italic;
+    text-align: center;
+}
+
+/* Estilos del boton del formulario */
+
+.formregistration button {
+    margin-top: 1%;
+    margin-left: 45%;
+    width: 10%;
+}
+
+.playerinfo {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;    
+}
+
+/* Estilos de las agrupaciones de campos */
+
+fieldset {    
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+/* Estilos para los inputs del formulario*/
+fieldset input {
+    margin: 0.5%;
+    max-width: 15%;
+}
+
+/* Estilos de las cabeceras de las agrupaciones de campos */
+
+fieldset legend {
+    font-weight: bold;
+}
+
+/*=====  End of Estilo propio con flex ======*/

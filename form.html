@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style/main.css">
+    <!--Icono de la pagina web-->
+    <link rel="icon" type="image/png" href="images/nysl_logo.png" />
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Northside Youth Soccer League</h1>
+    </header>
+
+    <!--Coleccion de las imagenes-->
+    <div class="images">
+        <img src="images/sport_child2.jpg" alt="children_playing">
+        <img src="images/sport_child.jpg" alt="children_playing">
+        <img src="images/nysl_logo.png" alt="logo_ball">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about.html">About NYSL</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="form.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!--action="/login.js"-->
+    <form class="formregistration" action="#" method="POST">
+
+        <h2>Registration Form</h2>
+        <fieldset class="playerinfo">
+            <legend>Player Information</legend>
+
+            <label for="first_name">Player’s First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="your first name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="your last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+            <label for="street_address">Street Address:</label>
+            <input type="text" id="street_address" name="street_address" placeholder="your address" required>
+
+            <label for="zip_code">Zip code</label>
+            <input type="text" id="zip_code" name="zip_code" placeholder="your zip code" required>
+
+            <label for="birth_date">Birth Date (mm/dd/yyyy):</label>
+            <input type="date" id="birth_date" name="birth_date" required>
+        </fieldset>
+
+        <fieldset class="gender">
+            <legend>Gender</legend>
+            <input type="checkbox" name="gender_female" id="gender_female" value="Female" checked>
+            <label for="gender_female">Female</label>
+            <input type="checkbox" name="gender_male" id="gender_male" value="Male">
+            <label for="gender_male">Male</label>
+        </fieldset>
+
+        <h3>Grade</h3>
+        <fieldset class="grade">
+            <input type="checkbox" name="pre_school" id="pre_school" value="Pre-School" checked>
+            <label for="pre_school">Pre-School</label>
+            <input type="checkbox" name="1st" id="1st" value="1st">
+            <label for="1st">1st</label>
+            <input type="checkbox" name="2nd" id="2nd" value="2nd">
+            <label for="2nd">2nd</label>
+            <input type="checkbox" name="3rd" id="3rd" value="3rd">
+            <label for="3rd">3rd</label>
+            <input type="checkbox" name="4th" id="4th" value="4th">
+            <label for="4th">4th</label>
+            <input type="checkbox" name="5th" id="5th" value="5th">
+            <label for="5th">5th</label>
+        </fieldset>
+
+        <h3>Which elementary schools do you live near?</h3>
+        <fieldset class="closestschool">
+            <legend>First Closest School</legend>
+            <input type="checkbox" name="first_AJ_Katzenmaier" id="first_AJ_Katzenmaier" value="AJ Katzenmaier" checked>
+            <label for="first_AJ_Katzenmaier">AJ Katzenmaier</label>
+            <input type="checkbox" name="first_Greenbay" id="first_Greenbay" value="Greenbay">
+            <label for="first_Greenbay">Greenbay</label>
+            <input type="checkbox" name="first_Howard_A_Yeager" id="first_Howard_A_Yeager" value="Howard A Yeager">
+            <label for="first_Howard_A_Yeager">Howard A Yeager</label>
+            <input type="checkbox" name="first_Marjorie_P_Hart" id="first_Marjorie_P_Hart" value="Marjorie P Hart">
+            <label for="first_Marjorie_P_Hart">Marjorie P Hart</label>
+            <input type="checkbox" name="first_North_Elementary" id="first_North_Elementary" value="North Elementary">
+            <label for="first_North_Elementary">North Elementary</label>
+            <input type="checkbox" name="first_South_Elementary" id="first_South_Elementary" value="South Elementary">
+            <label for="first_South_Elementary">South Elementary</label>
+        </fieldset>
+
+        <fieldset class="secondclosestschool">
+            <legend>Second Closest School</legend>
+            <input type="checkbox" name="second_AJ_Katzenmaier" id="second_AJ_Katzenmaier" value="AJ Katzenmaier"
+                checked>
+            <label for="second_AJ_Katzenmaier">AJ Katzenmaier</label>
+            <input type="checkbox" name="second_Greenbay" id="second_Greenbay" value="Greenbay">
+            <label for="second_Greenbay">Greenbay</label>
+            <input type="checkbox" name="second_Howard_A_Yeager" id="second_Howard_A_Yeager" value="Howard A Yeager">
+            <label for="second_Howard_A_Yeager">Howard A Yeager</label>
+            <input type="checkbox" name="second_Marjorie_P_Hart" id="second_Marjorie_P_Hart" value="Marjorie P Hart">
+            <label for="second_Marjorie_P_Hart">Marjorie P Hart</label>
+            <input type="checkbox" name="second_North_Elementary" id="second_North_Elementary" value="North Elementary">
+            <label for="second_North_Elementary">North Elementary</label>
+            <input type="checkbox" name="second_South_Elementary" id="second_South_Elementary" value="South Elementary">
+            <label for="second_South_Elementary">South Elementary</label>
+        </fieldset>
+
+        <h3>What position(s) do you normally play? (check all that apply)</h3>
+        <fieldset class="positionplayer">
+            <input type="checkbox" name="foward" id="foward" value="Forward" checked>
+            <label for="foward">Forward</label>
+            <input type="checkbox" name="defense" id="defense" value="Defense">
+            <label for="defense">Defense</label>
+            <input type="checkbox" name="midfield" id="midfield" value="Midfield">
+            <label for="midfield">Midfield</label>
+            <input type="checkbox" name="goalkeeper" id="goalkeeper" value="Goalkeeper">
+            <label for="goalkeeper">Goalkeeper</label>
+        </fieldset>
+
+        <h3>What position(s) do you want to play? (check all that apply)</h3>
+        <fieldset class="positionwanted">
+            <input type="checkbox" name="wanted_foward" id="wanted_foward" value="Forward" checked>
+            <label for="wanted_foward">Forward</label>
+            <input type="checkbox" name="wanted_defense" id="wanted_defense" value="Defense">
+            <label for="wanted_defense">Defense</label>
+            <input type="checkbox" name="wanted_midfield" id="wanted_midfield" value="Midfield">
+            <label for="wanted_midfield">Midfield</label>
+            <input type="checkbox" name="wanted_goalkeeper" id="wanted_goalkeeper" value="Goalkeeper">
+            <label for="wanted_goalkeeper">Goalkeeper</label>
+        </fieldset>
+
+        <h3>You have a Uniform?</h3>
+        <fieldset class="uniform">
+            <input type="checkbox" name="already_have_uniform" id="already_have_uniform" value="I_have_a_uniform">
+            <label for="already_have_uniform">Already Have a Uniform</label>
+        </fieldset>
+
+        <h3>Jersey Size:</h3>
+        <fieldset class="jerseysize">
+            <input type="checkbox" name="youth_small" id="youth_small" value="youth small" checked>
+            <label for="youth_small">Youth Small</label>
+            <input type="checkbox" name="youth_medium" id="youth_medium" value="Youth Medium">
+            <label for="youth_medium">Youth Medium</label>
+            <input type="checkbox" name="youth_large" id="youth_large" value="Youth Large">
+            <label for="youth_large">Youth Large</label>
+            <input type="checkbox" name="small" id="small" value="Small">
+            <label for="small">Small</label>
+            <input type="checkbox" name="medium" id="medium" value="Medium">
+            <label for="medium">Medium</label>
+            <input type="checkbox" name="large" id="large" value="Large">
+            <label for="large">Large</label>
+            <input type="checkbox" name="extra_large" id="extra_large" value="Extra-Large">
+            <label for="extra_large">Extra-Large</label>
+        </fieldset>
+
+        <h3>Shorts Size:</h3>
+        <fieldset class="shortsize">
+            <input type="checkbox" name="short_youth_small" id="short_youth_small" value="youth small" checked>
+            <label for="short_youth_small">Youth Small</label>
+            <input type="checkbox" name="short_youth_medium" id="short_youth_medium" value="Youth Medium">
+            <label for="short_youth_medium">Youth Medium</label>
+            <input type="checkbox" name="short_youth_large" id="short_youth_large" value="Youth Large">
+            <label for="short_youth_large">Youth Large</label>
+            <input type="checkbox" name="short_small" id="short_small" value="Small">
+            <label for="short_small">Small</label>
+            <input type="checkbox" name="short_medium" id="short_medium" value="Medium">
+            <label for="short_medium">Medium</label>
+            <input type="checkbox" name="short_large" id="short_large" value="Large">
+            <label for="short_large">Large</label>
+            <input type="checkbox" name="short_extra_large" id="short_extra_large" value="Extra-Large">
+            <label for="short_extra_large">Extra-Large</label>
+        </fieldset>
+
+        <article class="legal_clause">
+            <h3>Permission to Play</h3>
+
+            I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
+            rules
+            of the Northside Youth
+            Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in
+            consideration for the “League”
+            accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or
+            otherwise
+            indemnify NYSL, their
+            employees and associated personnel and volunteers, including the facilities used for practices and
+            games,
+            against any claim by or
+            on behalf of the registrant as a result of the registrant’s participation in the program and/or being
+            transported to or from NYSL
+            sponsored activities, which transportation.
+            By signing below, I hereby agree and authorize the above. In addition, by signing below, I also
+            acknowledge
+            that
+            I have read the
+            cancellation policy and agree to its terms.
+            <fieldset class="parentsignature">
+                <label for="parent_guardian_signature">Parent/Guardian Signature: </label>
+                <input type="text" name="parent_guardian_signature" id="parent_guardian_signature" placeholder="parent's signature" required>
+            </fieldset>
+            <fieldset class="datefirm">
+                <label for="date_firm">Date: </label>
+                <input type="date" name="date_firm" id="date_firm" required>
+            </fieldset>
+        </article>
+
+        <button name="submit">
+            Sign Up
+        </button>
+    </form>
+</body>
+
+</html>
