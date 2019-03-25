@@ -43,7 +43,7 @@
 
         <script language="javascript">
             var args = location.search.substr(1).split('&');
-            for (var i = 1; i < args.length; ++i) {
+            for (var i = 0; i < args.length; ++i) {
                 var parts = args[i].split('=');
                 if (parts != null) {
                     var field = parts[0];
@@ -52,6 +52,13 @@
                         value = "null"
                     }
                     else {
+                        //elimina los caracteres '_' de los campos del formulario
+                        field = field.replace('_', ' ');
+                        //En el caso de que exista mas de un caracter '_'
+                        if(field.indexOf('_') !== -1)
+                        {
+                            field = field.replace('_', ' ');
+                        }
                         value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
                     }
 
