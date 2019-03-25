@@ -12,7 +12,7 @@ function validarNombre()
     else
     {
         campoValido = true;
-    }    
+    }
 
     return campoValido;
 }
@@ -76,6 +76,23 @@ function validarZipCode()
     if(String(zip_code) == "" || String(zip_code) == " ")
     {
         alert("Your zip code is empty");
+    }
+    else
+    {
+        campoValido = true;
+    }
+
+    return campoValido;
+}
+
+function validarParentSignature()
+{
+    var parentSignature = document.getElementById("parent_guardian_signature").value;
+    var campoValido = false;
+
+    if(String(parentSignature) == "" ||String(parentSignature) == " ")
+    {
+        alert("Your signature is empty")
     }
     else
     {
