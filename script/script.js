@@ -76,11 +76,10 @@ function validarZipCode()
     if(String(zip_code) == "" || String(zip_code) == " ")
     {
         alert("Your zip code is empty");
-        return false;
     }
     else
     {
-        return true;
+        campoValido = true;
     }
 
     return campoValido;
