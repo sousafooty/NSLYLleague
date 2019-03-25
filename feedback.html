@@ -43,7 +43,7 @@
 
         <script language="javascript">
             var args = location.search.substr(1).split('&');
-            for (var i = 0; i < args.length; ++i) {
+            for (var i = 1; i < args.length; ++i) {
                 var parts = args[i].split('=');
                 if (parts != null) {
                     var field = parts[0];
