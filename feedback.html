@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -41,7 +41,7 @@
             <th>Field Value</th>
         </tr>
 
-        <script language="javascript">
+        <script>
             var args = location.search.substr(1).split('&');
 
             for (var i = 0; i < args.length; ++i) {
@@ -51,7 +51,7 @@
                 if (parts != null) {
                     var field = parts[0];
                     var value = parts[1];
-                    
+
                     if (value == null) {
                         value = "null"
                     }
@@ -59,8 +59,7 @@
                         //elimina los caracteres '_' de los campos del formulario
                         field = field.replace('_', ' ');
                         //En el caso de que exista mas de un caracter '_'
-                        if(field.indexOf('_') !== -1)
-                        {
+                        if (field.indexOf('_') !== -1) {
                             field = field.replace('_', ' ');
                         }
                         value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
@@ -71,8 +70,10 @@
                 }
             }
         </script>
+    </table>
 
-        <noscript>
+    <noscript>
+        <table>
             <tr>
                 <td>
                     <p>You need to turn on Javascript in your browser.</p>
@@ -96,9 +97,8 @@
 
                 </td>
             </tr>
-        </noscript>
-
-    </table>
+        </table>
+    </noscript>
 </body>
 
 </html>
